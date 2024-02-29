@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import path from "path";
 import fs from "fs/promises";
+import cesium from 'vite-plugin-cesium';
 // https://vitejs.dev/config/
 export default defineConfig({
   // 静态资源引用路径，默认为"/"
@@ -27,7 +28,7 @@ export default defineConfig({
   },
   esbuild: {
     loader: "tsx",
-    include: /src\/.*\.tsx?$/,
+    include: ["src/**/*.ts", "src/**/*.tsx"],
     exclude: [],
   },
   optimizeDeps: {
@@ -45,5 +46,5 @@ export default defineConfig({
       ],
     },
   },
-  plugins: [react()],
+  plugins: [react(), cesium()]
 });

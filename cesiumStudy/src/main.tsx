@@ -1,14 +1,27 @@
-import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
-import { ConfigProvider } from "antd";
-// 引入Ant Design中文语言包
-import zhCN from "antd/locale/zh_CN";
-// 全局样式
-import "@/common/styles/frame.css";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { Provider } from 'react-redux';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+import { store } from './store';
+import { ErrorBoundary } from './component/error/ErrorBoundary';
+import App from './App';
+const container = document.getElementById('root');
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = ReactDOM.createRoot(container!); // createRoot(container!) if you use TypeScript
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLDivElement).render(
-  <ConfigProvider locale={zhCN}>
-    <App />
-  </ConfigProvider>
+// 定义当前项目的路由模式
+
+root.render(
+    <React.StrictMode>
+        <ErrorBoundary>
+            <Provider store={store}>
+                <App />
+            </Provider>
+        </ErrorBoundary>
+    </React.StrictMode>
 );
+
+// If you want to start measuring performance in your app, pass a function
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

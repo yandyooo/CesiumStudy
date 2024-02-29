@@ -1,0 +1,18 @@
+getConfig({
+  "BASEURL": "http://192.168.1.120",
+  "ADMINURL": "http://192.168.1.120:40001",
+  "TILEURL": "https://mt1.efly-cetc.com/map.php?lyrs=y@821&hl=zh-CN&gl=CN&x={x}&y={y}&z={z}",
+  // 内部服务器
+//   "DEMURL": "http://192.168.1.120/map/terrain",
+   "DEMURL": "http://192.168.1.120/map/under",
+//  "DEMURL": "http://192.168.1.117:9003/terrain/ye8CubBJ",
+  // 内部服务器
+   "TILEURLLine": "http://192.168.1.120/map/image/{z}/{x}/{y}.png",
+  //  "TILEURLLine": "https://api.mapbox.com/styles/v1/mrpeng/cleqrqcqg00gg01ntb3c3h9dq/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibXJwZW5nIiwiYSI6ImNqcHQ0MnJvczAyM2I0M3F3d3RibmN5YmoifQ.ocNfVP9uYlCSce5RghwuGw",
+//  "TILEURLLine": "http://map.geoq.cn/arcgis/rest/services/ChinaOnlineStreetPurplishBlue/MapServer/tile/{z}/{y}/{x}",
+//  "TILEURLLine":"https://gac-geo.googlecnapps.cn/maps/vt?lyrs=y&hl=zh-CN&gl=CN&x={x}&y={y}&z={z}",
+  "SOCKETURL": "192.168.1.120",
+  "ISENCRYP": false,
+  // 是否加密
+  "SOCKETPORT": 80
+})

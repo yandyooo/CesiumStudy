@@ -10,24 +10,39 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@craco/craco": "^7.0.0-alpha.9",
     "antd": "^5.14.2",
+    "cesium": "^1.114.0",
+    "cesium-navigation-es6": "^3.0.8",
+    "craco-cesium": "^1.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.3",
+    "resium": "^1.17.2",
+    "yzhcesium": "^1.0.136"
   },
   "devDependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
     "@types/node": "^20.11.21",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
+    "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react": "^4.2.1",
+    "craco-cesium": "^1.2.0",
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "less": "^4.2.0",
+    "pixi-dashed-line": "^1.2.0",
+    "pixi.js": "^6.2.1",
+    "react-redux": "^8.0.1",
     "sass": "^1.71.1",
     "stylus": "^0.62.0",
     "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "vite-plugin-cesium": "^1.2.22",
+    "web-vitals": "^1.0.1"
   }
 }
